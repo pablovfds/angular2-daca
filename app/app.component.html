@@ -2,19 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Problems | Dirlididi</title>
+    <title>Welcome | Dirlididi</title>
 
-    <link href="problems.component.css" rel="stylesheet">
+    <link href="app,component.css" rel="stylesheet">
 
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
   </head>
 
   <body>
+
     <!-- Fixed navbar -->
     <div class="navbar-wrapper">
       <div class="container">
@@ -34,19 +35,19 @@
         	<div class="collapse navbar-collapse">
         		<ul class="nav navbar-nav"> <!--<view>-->
         			<li class="au-target" au-target-id="14">
-        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" href="#/">Welcome</a>
+        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" >Welcome</a>
         			</li><!--</view>--><!--<view>-->
         			<li class="au-target active" au-target-id="14">
-        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" href="#/problems">Problems</a>
+        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" >Problems</a>
         			</li><!--</view>--><!--<view>-->
         			<li class="au-target" au-target-id="14">
-        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" href="#/courses">Courses</a>
+        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" >Courses</a>
         			</li><!--</view>--><!--<view>-->
         			<li class="au-target" au-target-id="14">
-        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" href="#/edit">Edit Problem</a>
+        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" >Edit Problem</a>
         			</li><!--</view>--><!--<view>-->
         			<li class="au-target" au-target-id="14">
-        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" href="#/ide">IDE</a>
+        				<a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" class="au-target" au-target-id="15" >IDE</a>
         			</li><!--</view>--><!--anchor-->
         		</ul>
         		<ul class="nav navbar-nav navbar-right">
@@ -65,28 +66,31 @@
       </div>
     </div>
 
-    <div>
-        <table class="table table-hover table-bordered table-condensed table-inverse">
-            <thead>
-              <tr>
-                <th>Problem</th>
-                <th>Description</th>
-                <th>Key</th>
-                <th>Created</th>
-                <th>Solved</th>
-              </tr>
-            </thead>
-            <tbody *ngFor="let problem of problemsList">
-              <tr>
-                <td>{{problem.name}}</td>
-                <td>{{problem.description}}</td>
-                <td>{{problem.id}}</td>
-                <td>{{problem.createdAt}}</td>
-                <td>{{problem.solved}}</td>
-              </tr>
-            </tbody>
-        </table>
-
+    <div class="container">
+			<section class="au-animate"> 
+				<h2>Solve problems to learn program skills!</h2> 
+				<h3>Global Stats</h3> 
+				<ul> 
+					<li>
+						<b>93</b> problems</li> 
+						<li><b>50</b> submitters</li> 
+				</ul> 
+				<h3>Your stats!</h3> 
+				<ul> 
+					<li><b></b> problems solved</li> <
+				</ul> 
+				<h3>Code submission</h3> Submit codes using <a href="/tools/dirlididi.py">our python tool</a> (token: <b></b>) or using our web IDE. <h3>Courses</h3> <!--anchor--> 
+				<div class="row"> 
+					<div class="col-md-3"> 
+						<div class="input-group"> 
+							<input class="form-control au-target" value.bind="course_key" placeholder="Key..." au-target-id="32"> 
+							<span class="input-group-btn"> 
+								<button class="btn btn-default au-target" click.delegate="addCourseAccept(course_key)" type="button" au-target-id="33">Add</button> </span> 
+						</div> 
+					</div>
+				</div> 
+				<br> 
+			</section>
     </div> <!-- /container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

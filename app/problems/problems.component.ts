@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProblemsService } from "./problems.service";
-import { Problems } from "./problem";
+import { Problem } from "./model/problem";
 
 @Component({
   moduleId: module.id,
@@ -8,12 +8,23 @@ import { Problems } from "./problem";
   templateUrl: 'problems.component.html'
 })
 
-export class ProblemsComponent {
-  nome = 'Pablo';
+export class ProblemsComponent implements OnInit {
 
-  problems : Problem[];
+  problemsList : Problem[];
 
-  constructor(problemsService : ProblemsService){
-    this.problems = problemsService.getProblems();
+  constructor(private problemsService : ProblemsService){
+  }
+  
+  ngOnInit(){
+    this.loadProblems()
+  }
+  
+  loadProblems(){
+    this.problemsService.getProblems().subscribe(
+      problems => this.problemsList = problems,
+      err => {
+        console.log(err);
+      }
+    );
   }
 }
