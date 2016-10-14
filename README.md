@@ -1,1 +1,1 @@
-# angular2-daca
+# angularjs2-daca
