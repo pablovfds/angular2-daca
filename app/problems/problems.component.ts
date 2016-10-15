@@ -14,11 +14,11 @@ export class ProblemsComponent implements OnInit {
 
   constructor(private problemsService : ProblemsService){
   }
-  
+
   ngOnInit(){
     this.loadProblems()
   }
-  
+
   loadProblems(){
     this.problemsService.getProblems().subscribe(
       problems => this.problemsList = problems,

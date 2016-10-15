@@ -1,0 +1,40 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome | Dirlididi</title>
+
+    <link href="home.component.css" rel="stylesheet">
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+<body>
+    <div>
+        <section class="au-animate"> 
+            <h3>Global Stats</h3> 
+            <ul> 
+                <li><b>{{resolvedProblems}}</b> problems</li> 
+                <li><b>{{usersSubmittingProblems}}</b> submitters</li> 
+            </ul>
+            <h3>Your stats!</h3> 
+            <ul> 
+                <li><b>{{userResolvedProblems}}</b> problems solved</li> 
+            </ul> 
+            <div class="row"> 
+                <div class="col-md-3"> 
+                    <div class="input-group"> 
+                        <input class="form-control au-target" placeholder="Key..." au-target-id="32"> 
+                        <span class="input-group-btn"> 
+                            <button class="btn btn-default au-target"  type="button" au-target-id="33">Add</button> </span> 
+                    </div> 
+                </div>
+            </div> 
+            <br> 
+        </section>
+    </div>
+</body>
