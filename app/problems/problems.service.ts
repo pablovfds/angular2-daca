@@ -6,7 +6,7 @@ import {Problem} from "./model/problem";
 
 @Injectable()
 export class ProblemsService {
-  private problemsUrl = 'http://localhost:8080/problem?page=&size=100&sort=date';
+  private problemsUrl = 'https://daca.herokuapp.com/problem?page=1&size=100&sort=date';
 
   problems : Problem[];
 

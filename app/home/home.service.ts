@@ -6,7 +6,7 @@ import {Statistic} from "./model/statistic";
 
 @Injectable()
 export class HomeService {
-  private statisticUrl = 'http://localhost:8080/statistic';
+  private statisticUrl = 'https://daca.herokuapp.com/statistic';
 
   statistics : Statistic;
 
