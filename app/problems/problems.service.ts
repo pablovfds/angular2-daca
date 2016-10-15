@@ -19,7 +19,7 @@ export class ProblemsService {
           headers.append('Access-Control-Allow-Origin', '*');
 
          return this.http.get(this.problemsUrl, {headers: headers})
-                         .map(res => <Problem[]> res.json())
+                         .map(res => <Problem[]> res.json().content)
                          .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
 
      }

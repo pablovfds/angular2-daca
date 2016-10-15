@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import {StatisticComponent} from '../statistics/statistic.component';
 import { HomeService } from "./home.service";
 import { Statistic } from "./model/statistic";
 
