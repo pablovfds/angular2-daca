@@ -16,5 +16,5 @@ Parte do Front-end da pagina [Dirlididi](http://dirlididi.com/client/index.html)
 
 # Execução local (Passos)
 - npm install
-- Baixar e executar o Back-end (Na lista de Links)
+- Baixar e executar os passos de execução local do Back-end (Na lista de Links)
 - npm start (Front-end)
