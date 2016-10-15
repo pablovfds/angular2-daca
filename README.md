@@ -3,10 +3,6 @@ Projeto da disciplina DACA em Spring Boot 2016.1
 
 Parte do Front-end da pagina [Dirlididi](http://dirlididi.com/client/index.html)
 
-# Paginas
-- Home
-- Problems
-
 # Equipe
 - Pablo Victor
 - Franklin Wesley
@@ -15,6 +11,6 @@ Parte do Front-end da pagina [Dirlididi](http://dirlididi.com/client/index.html)
 - Back-end: [Link](https://github.com/franklinwesley/DACAproject)
 
 # Execução local (Passos)
+- git clone https://github.com/pablovfds/angularjs2-daca.git
 - npm install
-- Baixar e executar os passos de execução local do Back-end (Na lista de Links)
 - npm start (Front-end)
